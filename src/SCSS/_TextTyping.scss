@@ -1,0 +1,60 @@
+.TextTyping {
+    display: inline-block;
+    > div {
+        font-family: 'Electrolize', sans-serif;
+        color: #f5973e;
+        font-weight: 500;
+        width: 50rem;
+        font-size: 5.5rem;
+        height: 5.5rem;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: flex-end;
+        font-weight: 600;
+
+        &:after {
+            content: "";
+            width: 1.7rem;
+            height: .4rem;
+            display: block;
+            background: white;
+            margin-bottom: 1rem;
+            margin-left: 2px;
+            animation-duration: 700ms;
+            animation-name: fade;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+@media(max-width: 900px) {
+    /* For mobile phones: */
+    .TextTyping 
+    {
+        > div 
+        {
+            font-size: 2rem;
+            width: 100%;
+            height: 3rem;
+         
+            &:after {
+                width: 1rem;
+                height: .2rem;
+                margin-bottom: .5rem;
+                margin-left: 3px;
+            }
+        }
+    }
+}

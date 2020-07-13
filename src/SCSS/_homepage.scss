@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+.Homepage-landing
+{
+    position: relative;
+    height: 98vh;
+    background-color: rgb(31, 31, 31);
+    background-image: url("../../Images/Homepage-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.Homepage-landing-text
+{
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -40%);
+    display: flex;
+    flex-direction: column;
+}
+
+.Homepage-landing-intro
+{
+    padding-bottom: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: -.1rem;
+    z-index: 2;
+    animation: textShow 3s;
+}
+
+@keyframes textShow {
+    0%   {opacity: 0;}
+    100% {opacity: 1;} 
+}
+
+@media(max-width: 900px) {
+    /* For mobile phones: */
+    .Homepage-landing
+    {
+        height: 85vh;
+    }
+    .Homepage-landing-intro
+    {
+        padding-bottom: 0;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: -.1rem;
+        z-index: 2;
+        animation: textShow 3s;
+    }
+}
