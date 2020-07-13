@@ -4,6 +4,7 @@ import React from 'react';
 import TextTyping from "../TextTyping";
 
 export default function Homepage() {
+    document.title = "Edgar G. | Homepage";
     return (
     <div className = "Homepage">
         <div className = "Homepage-landing">

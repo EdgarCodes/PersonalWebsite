@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Projects extends Component {
-    render() {
-        return (
-            <div>
-                Projects!
-            </div>
-        )
-    }
+export default function Projects() {
+    document.title = "Edgar G. | Projects";
+    return (
+        <div>
+            Projects!
+        </div>
+    )
 }

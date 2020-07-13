@@ -4,7 +4,7 @@
 .Homepage-landing
 {
     position: relative;
-    height: 98vh;
+    height: 100vh;
     background-color: rgb(31, 31, 31);
     background-image: url("../../Images/Homepage-background.jpg");
     background-repeat: no-repeat;
@@ -23,6 +23,7 @@
 
 .Homepage-landing-intro
 {
+    margin-top: 60px;
     padding-bottom: 1rem;
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -42,7 +43,7 @@
     /* For mobile phones: */
     .Homepage-landing
     {
-        height: 85vh;
+        height: 100vh;
     }
     .Homepage-landing-intro
     {
