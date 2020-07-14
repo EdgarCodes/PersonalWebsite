@@ -27,23 +27,104 @@
     padding-bottom: 1rem;
     font-family: 'Roboto Mono', monospace;
     color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 300;
     letter-spacing: -.1rem;
     z-index: 2;
     animation: textShow 3s;
 }
 
+.Homepage-landing-btn
+{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+    display: inline-block;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 100%;
+    border: .1rem solid white;
+
+    i
+    {
+        padding-top: .45rem;
+        color: white;
+    }
+}
+
+.Homepage-landing-btn:hover
+{
+    border-color: #f5973e;
+    i
+    {
+        color: #f5973e;
+    }
+}
+
+.Homepage-info
+{
+    background-color: rgb(238, 238, 238);
+    padding: 3rem;
+}
+
+.Homepage-container-1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-1-title
+{
+    padding: 2rem 0;
+    text-align: center;
+    h1
+    {
+        color: #ff9c40;
+        font-size: 3rem;
+        font-weight: 500;
+        margin: .25rem 0;
+    }
+
+    .divider
+    {
+        width: 40%;
+        max-width: 200px;
+        height: 4px;
+        border-radius: 10px;
+        background-color:#f5973e;
+        margin: auto;
+    }
+
+}
+
+.paragraph-1
+{
+    width: 80%;
+    font-weight: 300;
+    max-width: 800px;
+    color: rgb(97, 97, 97);
+    font-size: 19px;
+}
+
+
 @keyframes textShow {
     0%   {opacity: 0;}
     100% {opacity: 1;} 
+}
+
+@media(max-width: 1400px) 
+{
+
 }
 
 @media(max-width: 900px) {
     /* For mobile phones: */
     .Homepage-landing
     {
-        height: 100vh;
+        height: 90vh;
     }
     .Homepage-landing-intro
     {
@@ -56,4 +137,5 @@
         z-index: 2;
         animation: textShow 3s;
     }
+
 }

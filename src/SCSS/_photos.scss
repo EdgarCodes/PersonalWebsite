@@ -1,0 +1,33 @@
+.Photos
+{
+    position: relative;
+    width: 450px;
+    height: 350px;
+}
+
+.Photos-container
+{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid rgba(153, 153, 153, 0.678);
+    text-align: center;
+    box-shadow: 1px 9px 6px 3px #888888;
+    img
+    {
+        margin-top: 10px;
+        width: 275px;
+        height: 325px;
+    }
+
+    transform: rotate(10deg);
+
+    animation: photoShow 2s;
+}
+
+@keyframes photoShow
+{
+    0%   {opacity: .25;}
+    100% {opacity: 1;} 
+}
