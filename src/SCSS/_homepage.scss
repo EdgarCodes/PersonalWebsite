@@ -12,6 +12,7 @@
     display: flex;
     justify-content: center;
 }
+
 .Homepage-landing-text
 {
     position: absolute;
@@ -32,6 +33,14 @@
     letter-spacing: -.1rem;
     z-index: 2;
     animation: textShow 3s;
+}
+
+.Homepage-landing-subtext
+{
+    padding-top: .5rem;
+    color: rgba(182, 182, 182, 0.685);
+    font-size: 20px;
+    animation: textShow 2.5s;
 }
 
 .Homepage-landing-btn
@@ -69,17 +78,31 @@
     padding: 3rem;
 }
 
+.Homepage-info-1
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .Homepage-container-1
 {
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.Homepage-container-1-info
+{
+    display: flex;
+    flex-direction: column;
+}
+
 .info-1-title
 {
+    display: inline-block;
     padding: 2rem 0;
-    text-align: center;
+
     h1
     {
         color: #ff9c40;
@@ -90,14 +113,27 @@
 
     .divider
     {
-        width: 40%;
-        max-width: 200px;
+        width: 20%;
+        max-width: 300px;
         height: 4px;
         border-radius: 10px;
         background-color:#f5973e;
-        margin: auto;
+
     }
 
+}
+
+.Homepage-info-containers
+{
+    align-self: center;
+    width: 70%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+    animation: textShow 2.5s;
 }
 
 @keyframes textShow {
@@ -115,6 +151,11 @@
     {
         flex-direction: column;        
     }
+    .Homepage-container-1-info
+    {
+        justify-content: center;
+        align-items: center;
+    }
 
 }
 
@@ -124,15 +165,28 @@
     {
         height: 90vh;
     }
+    .info-1-title
+    {
+        padding: 1rem 0;
+        padding-bottom: 2rem;
+        h1
+        {
+            font-size: 2rem;
+        }
+    }
     .Homepage-landing-intro
     {
         padding-bottom: 0;
-        font-family: 'Roboto Mono', monospace;
-        color: white;
         font-size: 1.5rem;
-        font-weight: 300;
-        letter-spacing: -.1rem;
-        z-index: 2;
-        animation: textShow 3s;
+    }
+    .Homepage-landing-subtext
+    {
+        font-size: 10px;
+    }
+
+    .Homepage-info-containers
+    {
+        width: 100%;
+        justify-content: center;
     }
 }

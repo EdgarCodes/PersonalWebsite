@@ -1,0 +1,124 @@
+.Icon
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 130px;
+    height: 150px;
+    margin-top: .5rem;
+    animation: IconShow 3s;
+}
+
+.Icon-offScreen
+{
+    width: 130px;
+    height: 150px;
+    margin-top: .5rem;
+}
+
+.Icon:hover .Icon-Background 
+{
+    animation: bounce-second 1s;
+}
+
+.Icon-Background
+{
+    display: inline-block;
+    color: white;
+    background-color: #fa861a;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 100px;
+    animation: bounce 1s;
+}
+
+.Icon-symbol
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 50px;
+}
+
+.Icon-desc
+{
+    padding-top: .5rem;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(97, 96, 96); 
+}
+
+@keyframes bounce
+{
+    0%   {transform: scaleY(.6) translateY(30%);}
+    20%   {transform: scaleY(1) translateY(-50%);}
+
+    40%   {transform: scaleY(.6) translateY(30%);}
+    60% {transform: scaleY(1) translateY(-30%);} 
+
+    80%   {transform: scaleY(.7) translateY(30%);}
+    100% {transform: scaleY(1) translateY(0%);} 
+}
+
+@keyframes bounce-second
+{
+    0%   {transform: scaleY(.6) translateY(30%);}
+    20%   {transform: scaleY(1) translateY(-50%);}
+
+    40%   {transform: scaleY(.6) translateY(30%);}
+    60% {transform: scaleY(1) translateY(-30%);} 
+
+    80%   {transform: scaleY(.7) translateY(30%);}
+    100% {transform: scaleY(1) translateY(0%);} 
+}
+
+@keyframes IconShow {
+    0%   {opacity: 0;}
+    100% {opacity: 1;} 
+}
+
+@media(max-width: 900px) {
+    /* For mobile phones: */
+    .Icon
+    {
+        width: 120px;
+        height: 120px;
+        margin-top: .5rem;
+        animation: IconShow 3s;
+    }
+
+    .Icon-offScreen
+    {
+        width: 100px;
+        height: 120px;
+        margin-top: .5rem;
+    }
+
+    .Icon-Background
+    {
+        height: 70px;
+        width: 70px;
+        text-align: center;
+        border-radius: 100px;
+        animation: bounce 1s;
+    }
+
+    .Icon-symbol
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 30px;
+    }
+
+    .Icon-desc
+    {
+        padding-top: .5rem;
+        text-align: center;
+        font-size: 10px;
+        color: rgb(97, 96, 96); 
+    }
+}

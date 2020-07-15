@@ -27,6 +27,29 @@
 
 @keyframes photoShow
 {
-    0%   {opacity: .25; transform: translateX(100%);}
+    0%   {opacity: .25; transform: translateX(20%);}
     100% {opacity: 1;} 
+}
+
+@media(max-width: 900px)
+{
+    .Photos
+    {
+        width: 300px;
+        height: 350px;
+    }
+
+    .Photos-container
+    {
+        height: 315px;
+        width: 250px;
+        border: 1px solid rgba(153, 153, 153, 0.678);
+        box-shadow: 1px 9px 6px 3px #888888;
+        img
+        {
+            margin-top: 10px;
+            width: 225px;
+            height: 265px;
+        }
+    }
 }

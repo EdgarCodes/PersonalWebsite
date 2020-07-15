@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import TrackVisibility from 'react-on-screen';
 
 export default function Photo(props) {

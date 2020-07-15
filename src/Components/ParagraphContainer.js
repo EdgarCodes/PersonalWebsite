@@ -8,13 +8,15 @@ export default function ParagraphContainer(props) {
         <div className = "paragraphContainer-text">
             {props.children}
         </div>
-        :<div/>
+        :<div className = "paragraphContainer-offScreen">
+            {props.children}
+        </div>
     }
 
 
     return (
         <div className= "ParagraphContainer">
-            <TrackVisibility once partialVisibility>
+            <TrackVisibility once partialVisibility offset={100}>
                 <VisibleParagraph/>
             </TrackVisibility>
         </div>

@@ -10,6 +10,7 @@ import Homepage from "./Components/Pages/Homepage";
 import Projects from "./Components/Pages/Projects";
 
 import NavBar from "./Components/NavBar";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" render={() => <Homepage/>}/>
           <Route exact path="/projects" render={() => <Projects/>}/>
         </Switch>
+        <Footer/>
     </div>
   );
 }
