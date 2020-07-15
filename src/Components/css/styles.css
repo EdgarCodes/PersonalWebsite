@@ -14,7 +14,7 @@
   position: relative;
   height: 100vh;
   background-color: #1f1f1f;
-  background-image: url("../../Images/Homepage-background.jpg");
+  background-image: url("../../Images/background5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -99,20 +99,21 @@
   margin: auto;
 }
 
-.paragraph-1 {
-  width: 80%;
-  font-weight: 300;
-  max-width: 800px;
-  color: #616161;
-  font-size: 19px;
-}
-
 @keyframes textShow {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .Homepage-info {
+    padding: 1rem;
+  }
+  .Homepage-container-1 {
+    flex-direction: column;
   }
 }
 
@@ -139,7 +140,7 @@
 
 .TextTyping > div {
   font-family: 'Electrolize', sans-serif;
-  color: #f5973e;
+  color: #fa861a;
   font-weight: 500;
   width: 50rem;
   font-size: 4.5rem;
@@ -369,34 +370,88 @@
 
 .Photos {
   position: relative;
-  width: 450px;
-  height: 350px;
+  width: 350px;
+  height: 375px;
+  display: flex;
+  justify-content: center;
 }
 
 .Photos-container {
   position: absolute;
-  height: 400px;
-  width: 300px;
+  height: 360px;
+  width: 275px;
   background-color: white;
   border: 1px solid rgba(153, 153, 153, 0.678);
   text-align: center;
   box-shadow: 1px 9px 6px 3px #888888;
-  transform: rotate(10deg);
   animation: photoShow 2s;
 }
 
 .Photos-container img {
   margin-top: 10px;
-  width: 275px;
-  height: 325px;
+  width: 250px;
+  height: 300px;
 }
 
 @keyframes photoShow {
   0% {
     opacity: .25;
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
+  }
+}
+
+.ParagraphContainer {
+  width: 50%;
+  max-width: 700px;
+  align-self: baseline;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.paragraphContainer-text {
+  font-weight: 300;
+  color: #616161;
+  font-size: 19px;
+  letter-spacing: .25px;
+  animation: paragraphIn 2.5s;
+}
+
+@keyframes paragraphIn {
+  0% {
+    opacity: .25;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .ParagraphContainer {
+    padding-top: 0;
+    align-self: center;
+    width: 70%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* For mobile phones: */
+  .ParagraphContainer {
+    font-size: 16px;
+    width: 95%;
+  }
+  @keyframes paragraphIn {
+    0% {
+      opacity: .25;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 /*# sourceMappingURL=styles.css.map */

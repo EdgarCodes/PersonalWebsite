@@ -1,0 +1,49 @@
+.ParagraphContainer
+{
+    width: 50%;
+    max-width: 700px;
+    align-self: baseline;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.paragraphContainer-text
+{
+    font-weight: 300;
+    color: rgb(97, 97, 97);
+    font-size: 19px;
+    letter-spacing: .25px;
+    animation: paragraphIn 2.5s;
+}
+
+@keyframes paragraphIn
+{
+    0%   {opacity: .25; transform: translateY(100%);}
+    100% {opacity: 1;} 
+}
+
+@media(max-width: 1100px) 
+{
+    .ParagraphContainer
+    {
+        padding-top: 0;
+        align-self: center;
+        width: 70%;
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 900px) {
+    /* For mobile phones: */
+    .ParagraphContainer
+    {
+        font-size: 16px;
+        width: 95%;
+    }
+
+    @keyframes paragraphIn
+    {
+        0%   {opacity: .25; transform: translateX(-100%);}
+        100% {opacity: 1;} 
+    }
+}

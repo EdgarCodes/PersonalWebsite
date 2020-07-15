@@ -1,15 +1,17 @@
 .Photos
 {
     position: relative;
-    width: 450px;
-    height: 350px;
+    width: 350px;
+    height: 375px;
+    display: flex;
+    justify-content: center;
 }
 
 .Photos-container
 {
     position: absolute;
-    height: 400px;
-    width: 300px;
+    height: 360px;
+    width: 275px;
     background-color: white;
     border: 1px solid rgba(153, 153, 153, 0.678);
     text-align: center;
@@ -17,17 +19,14 @@
     img
     {
         margin-top: 10px;
-        width: 275px;
-        height: 325px;
+        width: 250px;
+        height: 300px;
     }
-
-    transform: rotate(10deg);
-
     animation: photoShow 2s;
 }
 
 @keyframes photoShow
 {
-    0%   {opacity: .25;}
+    0%   {opacity: .25; transform: translateX(100%);}
     100% {opacity: 1;} 
 }

@@ -1,28 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import TrackVisibility from 'react-on-screen';
 
 export default function Photo(props) {
-    const [photos, setPhotos] = useState([props.images[0]]);
 
-    const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-
-    useEffect(() => {
-
-        async function fetchData()
-        {
-            await sleep(3000);
-            setPhotos([...photos, props.images[1]]);
-        }
-
-        fetchData();
-    }, [])
-
-    return (
+    const TrackedPhoto = ({ isVisible }) => {
+        return isVisible?
         <div className = "Photos">
-            {photos.map((img,i) => {
-                return <div className = "Photos-container" key = {i} style = {{transform: `rotate(${img.rot}deg)`}}>
-                    <img src = {img.image} alt="me"/>
-                </div>
-            })}
-        </div>
+            <div className = "Photos-container">
+                    <img src = {props.image} alt="me"/>
+            </div>
+        </div>:
+        <div className = "Photos"/>
+    }
+
+    return ( 
+        <TrackVisibility once partialVisibility>
+            <TrackedPhoto/>
+        </TrackVisibility>
     )
 }
