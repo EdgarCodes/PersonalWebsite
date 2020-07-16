@@ -108,7 +108,6 @@
 }
 
 .info-1-title .divider {
-  width: 20%;
   max-width: 300px;
   height: 4px;
   border-radius: 10px;
@@ -125,6 +124,28 @@
   align-items: center;
   margin: 2rem 0;
   animation: textShow 2.5s;
+}
+
+.info-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Homepage-info-education {
+  max-width: 1500px;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Homepage-education-right {
+  padding-left: 1rem;
+}
+
+.Homepage-education-left {
+  margin-right: 1rem;
 }
 
 @keyframes textShow {
@@ -146,6 +167,15 @@
   .Homepage-container-1-info {
     justify-content: center;
     align-items: center;
+  }
+  .Homepage-info-education {
+    flex-direction: column;
+  }
+  .Homepage-education-right {
+    padding-left: 0;
+  }
+  .Homepage-education-left {
+    margin-right: 0;
   }
 }
 
@@ -581,6 +611,49 @@
   color: #616060;
 }
 
+.FlatIcon {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+.FlatIcon-Background {
+  width: 250px;
+  height: 30px;
+  background-color: #fa861a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.FlatIcon-symbol {
+  font-size: 28px;
+  margin-right: 2rem;
+}
+
+.FlatIcon-text {
+  font-weight: 300;
+}
+
+.FlatIcon-desc {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 15px;
+  color: #4e4e4e;
+}
+
+.FlatIcon-Subdesc {
+  padding-top: .5rem;
+  text-align: center;
+  font-size: 12px;
+  color: #838181;
+}
+
 @keyframes bounce {
   0% {
     transform: scaleY(0.6) translateY(30%);
@@ -665,5 +738,35 @@
     font-size: 10px;
     color: #616060;
   }
+}
+
+.CourseList-Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fa861a;
+  color: white;
+  height: 2.5rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.CourseList-List {
+  height: 300px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px rgba(209, 209, 209, 0.774) solid;
+}
+
+.CourseList-course {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 300;
+  color: #4d4d4d;
+  padding: .4rem .5rem;
+  border-bottom: 1px rgba(167, 167, 167, 0.719) solid;
 }
 /*# sourceMappingURL=styles.css.map */

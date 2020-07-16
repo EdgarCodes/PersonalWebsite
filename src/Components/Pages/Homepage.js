@@ -6,6 +6,11 @@ import TextTyping from "../TextTyping";
 import Photo from "../Photo";
 import ParagraphContainer from "../ParagraphContainer";
 import Icon from "../Icon";
+import FlatIcon from "../FlatIcon";
+import CourseList from "../CourseList";
+
+//Helpers
+import {courses} from "../../Helpers/LongText";
 
 //import photos
 import graduation_photo from "../../Images/Graduation_Picture.jpg";
@@ -75,16 +80,41 @@ export default function Homepage() {
 
             </div>
 
-            <div className = "Homepage-info-2">
-                <div className = "info-1-title">
-                    <h1>Quick Facts About Myself</h1>
+            <div className = "Homepage-info-1">
+                <div className = "info-1-title info-center">
+                    <h1>Education</h1>
+                    <div className = "divider"/>
+                </div>
+                
+                <div className= "Homepage-info-education">
+                    <div className = "Homepage-education-left">
+                        <FlatIcon title = "University" desc = "Western Kentucky University" subDesc="3rd Year Sophmore">
+                            <i className="fas fa-university"></i>
+                        </FlatIcon>
+                        <FlatIcon title = "Field of Study" desc = "Bachelor of Science Computer Science" subDesc="Minor in Mathematics">
+                            <i className="fas fa-laptop-code"></i>
+                        </FlatIcon>
+                        <FlatIcon title = "Grade Point Average" desc = "GPA - 3.65" subDesc="">
+                            <i className="fas fa-school"></i>
+                        </FlatIcon>
+                    </div>
+
+                    <div className = "Homepage-education-right">
+                        <CourseList courses = {courses}/>
+                    </div>
+                </div>
+            </div>
+
+            <div className = "Homepage-info-education">
+                <div className = "info-1-title info-center">
+                    <h1>Skills</h1>
                     <div className = "divider"/>
                 </div>
             </div>
 
-            <div className = "Homepage-info-3">
-                <div className = "info-1-title">
-                    <h1>Visit my Blog!</h1>
+            <div className = "Homepage-info-1">
+                <div className = "info-1-title info-center">
+                    <h1>Blog: South Korea</h1>
                     <div className = "divider"/>
                 </div>
             </div>

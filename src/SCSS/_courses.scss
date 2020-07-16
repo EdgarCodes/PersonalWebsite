@@ -1,0 +1,35 @@
+
+.CourseList-Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fa861a;
+    color: white;
+    height: 2.5rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.CourseList-List
+{
+    height: 300px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+
+    border: 1px rgba(209, 209, 209, 0.774) solid;
+}
+
+.CourseList-course
+{
+    width: 100%;
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(77, 77, 77);
+    padding: .4rem .5rem;
+
+    border-bottom: 1px rgba(167, 167, 167, 0.719) solid;
+}
