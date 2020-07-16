@@ -113,7 +113,7 @@
 
     .divider
     {
-        max-width: 300px;
+        width: 300px;
         height: 4px;
         border-radius: 10px;
         background-color:#f5973e;
@@ -138,6 +138,7 @@
 .info-center
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -182,20 +183,6 @@
         justify-content: center;
         align-items: center;
     }
-    .Homepage-info-education 
-    {
-        flex-direction: column;
-    }
-
-    .Homepage-education-right
-    {
-        padding-left: 0;
-    }
-    .Homepage-education-left
-    {
-        margin-right: 0;
-    }
-
 }
 
 @media(max-width: 900px) {
@@ -228,4 +215,19 @@
         width: 100%;
         justify-content: center;
     }
+
+    .Homepage-info-education 
+    {
+        flex-direction: column;
+    }
+
+    .Homepage-education-right
+    {
+        padding-left: 0;
+    }
+    .Homepage-education-left
+    {
+        margin-right: 0;
+    }
+
 }

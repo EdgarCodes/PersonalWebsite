@@ -105,7 +105,7 @@ export default function Homepage() {
                 </div>
             </div>
 
-            <div className = "Homepage-info-education">
+            <div className = "Homepage-info-1">
                 <div className = "info-1-title info-center">
                     <h1>Skills</h1>
                     <div className = "divider"/>
