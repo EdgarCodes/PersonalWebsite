@@ -183,6 +183,12 @@
     justify-content: center;
     align-items: center;
   }
+  .info-1-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media (max-width: 900px) {
@@ -213,6 +219,7 @@
   }
   .Homepage-education-right {
     padding-left: 0;
+    margin-bottom: 2rem;
   }
   .Homepage-education-left {
     margin-right: 0;
@@ -370,7 +377,7 @@
 
 @keyframes slide-in {
   0% {
-    left: 750px;
+    transform: translateX(50%);
     opacity: 0;
   }
   25% {
@@ -403,7 +410,7 @@
     opacity: .25;
   }
   100% {
-    transform: translate(750px, 0);
+    transform: translate(10%);
     opacity: 0;
   }
 }
@@ -518,7 +525,7 @@
 .paragraphContainer-text {
   font-weight: 300;
   color: #494949;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: .25px;
   animation: paragraphIn 1.5s;
 }
@@ -542,13 +549,13 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   /* For mobile phones: */
   .ParagraphContainer {
-    width: 95%;
+    width: 90%;
   }
   .paragraphContainer-text {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 
@@ -755,6 +762,28 @@
   }
 }
 
+@media (max-width: 500px) {
+  .Icon {
+    width: 120px;
+    height: 120px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: .5rem;
+    animation: IconShow 3s;
+  }
+}
+
+@media (max-width: 400px) {
+  .Icon {
+    width: 120px;
+    height: 120px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: .5rem;
+    animation: IconShow 3s;
+  }
+}
+
 .CourseList-Header {
   display: flex;
   justify-content: center;
@@ -790,12 +819,56 @@
 }
 
 .CourseList ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px grey;
+  box-shadow: inset 0 0 2px #f5973e;
   border-radius: 3px;
 }
 
 .CourseList ::-webkit-scrollbar-thumb {
   background: #b4b4b4;
   border-radius: 5px;
+}
+
+.SkillGraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.Skill-line {
+  display: flex;
+  align-items: center;
+}
+
+.Skill-line-text {
+  width: 150px;
+  padding: .6rem 0;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.Skill-line-circle {
+  background-color: #f5973e;
+  width: 20px;
+  height: 20px;
+  margin: 0 .2rem;
+  border-radius: 100px;
+}
+
+@media (max-width: 1100px) {
+  .Skill-line-text {
+    width: 125px;
+    padding: .5rem 0;
+  }
+  .Skill-line-circle {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* For mobile phones: */
 }
 /*# sourceMappingURL=styles.css.map */

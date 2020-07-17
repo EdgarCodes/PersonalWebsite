@@ -8,9 +8,10 @@ import ParagraphContainer from "../ParagraphContainer";
 import Icon from "../Icon";
 import FlatIcon from "../FlatIcon";
 import CourseList from "../CourseList";
+import SkillGraph from "../SkillGraph";
 
 //Helpers
-import {courses} from "../../Helpers/LongText";
+import {courses, skills} from "../../Helpers/LongText";
 
 //import photos
 import graduation_photo from "../../Images/Graduation_Picture.jpg";
@@ -26,7 +27,7 @@ export default function Homepage() {
         <div className = "Homepage-landing">
             <div className = "Homepage-landing-text">
                 <div className = "Homepage-landing-intro">{`//Hello, I am...`}</div>
-                <TextTyping strings= {["Edgar The Alpha", "Edgar Gonzalez."]}/>
+                <TextTyping strings= {["Edgar The Coder", "Edgar Gonzalez."]}/>
                 <div className = "Homepage-landing-subtext"> A 3rd Year Computer Science Major at WKU</div>
             </div>
             <ScrollLink className = "Homepage-landing-btn"
@@ -109,6 +110,32 @@ export default function Homepage() {
                 <div className = "info-1-title info-center">
                     <h1>Skills</h1>
                     <div className = "divider"/>
+                </div>
+
+                <div className = "Homepage-skills-graph">
+                    <SkillGraph skills = {skills}/>
+                </div>
+
+                <div className = "Homepage-info-containers skills-container">
+                    <Icon desc = "Version Control with Git">
+                        <i className="fab fa-git-alt"></i>
+                    </Icon>
+
+                    <Icon desc = "Android Studio">
+                        <i className="fab fa-android"></i>
+                    </Icon>
+
+                    <Icon desc = "Unity Game Engine">
+                        <i className="fab fa-unity"></i>
+                    </Icon>
+
+                    <Icon desc = "Relational and No-SQL Databases">
+                        <i className="fas fa-database"></i>
+                    </Icon>
+
+                    <Icon desc = "Linux-based Operating Systems">
+                        <i className="fab fa-linux"></i>
+                    </Icon>
                 </div>
             </div>
 

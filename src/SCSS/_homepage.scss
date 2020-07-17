@@ -121,7 +121,6 @@
     }
 
 }
-
 .Homepage-info-containers
 {
     align-self: center;
@@ -162,7 +161,6 @@
 }
 
 
-
 @keyframes textShow {
     0%   {opacity: 0;}
     100% {opacity: 1;} 
@@ -180,6 +178,13 @@
     }
     .Homepage-container-1-info
     {
+        justify-content: center;
+        align-items: center;
+    }
+    .info-1-title
+    {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -224,6 +229,7 @@
     .Homepage-education-right
     {
         padding-left: 0;
+        margin-bottom: 2rem;
     }
     .Homepage-education-left
     {

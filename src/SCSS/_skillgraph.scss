@@ -1,0 +1,53 @@
+.SkillGraph
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.Skill-line
+{
+    display: flex;
+    align-items: center;
+}
+
+.Skill-line-text
+{
+    width: 150px;
+    padding: .6rem 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.Skill-line-circle
+{
+    background-color: #f5973e;
+    width: 20px;
+    height: 20px;
+    margin: 0 .2rem;
+    border-radius: 100px;
+}
+
+
+@media(max-width: 1100px) 
+{
+    .Skill-line-text
+    {
+        width: 125px;
+        padding: .5rem 0;
+    }
+    .Skill-line-circle
+    {
+        width: 12px;
+        height: 12px;
+    }    
+}
+
+@media(max-width: 900px) {
+    /* For mobile phones: */
+
+
+}

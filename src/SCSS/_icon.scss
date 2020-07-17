@@ -173,3 +173,30 @@
         color: rgb(97, 96, 96); 
     }
 }
+
+
+@media(max-width: 500px)
+{
+    .Icon
+    {
+        width: 120px;
+        height: 120px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: .5rem;
+        animation: IconShow 3s;
+    }
+}
+
+@media(max-width: 400px)
+{
+    .Icon
+    {
+        width: 120px;
+        height: 120px;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: .5rem;
+        animation: IconShow 3s;
+    }
+}
