@@ -8,11 +8,14 @@
 {
     color: rgb(238, 238, 238);
 }
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
 
 .paragraphContainer-text
 {
     font-weight: 300;
-    color: rgb(73, 73, 73);
+    color: rgb(102, 102, 102);
+    font-family: 'Lora', serif;
+    line-height: 25px;
     font-size: 17px;
     letter-spacing: .25px;
     animation: paragraphIn 1.5s;

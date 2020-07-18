@@ -15,6 +15,8 @@ import {courses, skills} from "../../Helpers/LongText";
 
 //import photos
 import graduation_photo from "../../Images/Graduation_Picture.jpg";
+import nhs_badge from "../../Icons/NHS_Member_Badge-300x300.png";
+import gilman_badge from "../../Icons/159503493365.png";
 
 export default function Homepage() {
 
@@ -141,8 +143,38 @@ export default function Homepage() {
 
             <div className = "Homepage-info-1">
                 <div className = "info-1-title info-center">
-                    <h1>Blog: South Korea</h1>
+                    <h1>Accomplishments</h1>
                     <div className = "divider"/>
+                </div>
+
+                <div className = "Homepage-badges">
+                    <div className = "badge-container">
+                        <img src={nhs_badge} alt="Part of the national honors society during highschool" />
+                    </div>
+                    
+                    <div className = "badge-container">
+                        <img src={gilman_badge} alt="Gilman Alumni" />
+                    </div>
+                </div>
+
+                <div className = "Homepage-accom-sub">
+                    <div className = "homepage-accomplishment">
+                        <FlatIcon title = "Deans List" desc = "2018-2020 WKU" subDesc="">
+                            <i className="fas fa-book"></i>
+                        </FlatIcon>
+                        <a target="_blank" 
+                        rel="noopener noreferrer"
+                        href="https://www.wku.edu/mediarelations/documents/wku-2020-spring-dean-pres-bg.pdf">Go to Page</a>
+                    </div>
+
+                    <div className = "homepage-accomplishment">
+                        <FlatIcon title = "Gilman Scholarship" desc = "WKU Gilman Alumni 2019 Article" subDesc="">
+                            <i className="fas fa-plane"></i>
+                        </FlatIcon>
+                        <a target="_blank" 
+                        rel="noopener noreferrer"
+                        href="https://www.wku.edu/news/articles/index.php?view=article&articleid=7812">Go to Page</a>
+                    </div>
                 </div>
             </div>
 

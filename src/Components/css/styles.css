@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -163,6 +164,42 @@
   margin-right: 1rem;
 }
 
+.Homepage-badges {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.Homepage-accom-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-accomplishment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.homepage-accomplishment a {
+  font-weight: 300;
+  background-color: #f5973e;
+  padding: .5rem;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  margin-top: -1.5rem;
+}
+
+.homepage-accomplishment a:hover {
+  background-color: #faa95d;
+  transform: scale(0.98);
+}
+
 @keyframes textShow {
   0% {
     opacity: 0;
@@ -189,6 +226,10 @@
     justify-content: center;
     align-items: center;
   }
+  .Homepage-badges img {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -208,7 +249,7 @@
     font-size: 1.5rem;
   }
   .Homepage-landing-subtext {
-    font-size: 10px;
+    font-size: 12px;
   }
   .Homepage-info-containers {
     width: 100%;
@@ -224,6 +265,13 @@
   .Homepage-education-left {
     margin-right: 0;
   }
+  .Homepage-badges {
+    flex-direction: column;
+    width: 90%;
+  }
+  .Homepage-accom-sub {
+    flex-direction: column;
+  }
 }
 
 .TextTyping {
@@ -232,7 +280,7 @@
 
 .TextTyping > div {
   font-family: 'Electrolize', sans-serif;
-  color: #fa861a;
+  color: #fc9c43;
   font-weight: 500;
   width: 50rem;
   font-size: 4.5rem;
@@ -269,7 +317,9 @@
 @media (max-width: 900px) {
   /* For mobile phones: */
   .TextTyping > div {
-    font-size: 2rem;
+    color: #faa657;
+    letter-spacing: -1px;
+    font-size: 2.2rem;
     width: 100%;
     height: 3rem;
   }
@@ -524,7 +574,9 @@
 
 .paragraphContainer-text {
   font-weight: 300;
-  color: #494949;
+  color: #666666;
+  font-family: 'Lora', serif;
+  line-height: 25px;
   font-size: 17px;
   letter-spacing: .25px;
   animation: paragraphIn 1.5s;
@@ -560,31 +612,85 @@
 }
 
 .Footer {
-  height: 10vh;
+  height: 100%;
   width: 100%;
   background-color: #eeeeee;
 }
 
 .Footer-top-points {
-  height: 60%;
+  height: 50px;
   background-color: #222;
   margin-bottom: -1rem;
 }
 
 .Footer-top {
-  height: 85%;
   background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Footer-top-btn {
+  margin: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 100%;
+  border: .1rem solid white;
+}
+
+.Footer-top-btn i {
+  padding-top: .45rem;
+  color: white;
+}
+
+.Footer-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer-icon {
+  cursor: pointer;
+  background-color: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: .5rem .5rem;
+  border-radius: 10px;
+}
+
+.Footer-icon:hover {
+  background-color: #383838;
+  transform: scale(0.98);
 }
 
 .Footer-bottom {
-  height: 4rem;
   background-color: #1a1a1a;
   text-align: center;
 }
 
 .Footer-bottom .Footer-text {
+  font-size: 11px;
   color: white;
-  padding-top: 1rem;
+  padding: .3rem;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  /* For mobile phones: */
+  .Footer-icon {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .Icon {
@@ -757,7 +863,7 @@
   .Icon-desc {
     padding-top: .5rem;
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     color: #616060;
   }
 }
@@ -815,11 +921,11 @@
 }
 
 .CourseList ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 
 .CourseList ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 2px #f5973e;
+  box-shadow: inset 0 0 2px grey;
   border-radius: 3px;
 }
 
@@ -870,5 +976,68 @@
 
 @media (max-width: 900px) {
   /* For mobile phones: */
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ContactForm {
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContactForm-input {
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 3px;
+  width: 500px;
+  margin-bottom: .5rem;
+  padding: .25rem .5rem;
+  border: none;
+  background-color: #414141;
+  color: white;
+  outline: none;
+}
+
+.large {
+  height: 100px;
+}
+
+.ContactForm-input::placeholder {
+  color: silver;
+}
+
+.ContactForm-btn {
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 18px;
+  border: 2px solid white;
+  color: white;
+  padding: .5rem 2rem;
+  background-color: rgba(128, 128, 128, 0);
+  outline: none;
+  margin-top: 1rem;
+  transition: background-color .5s, color .5s;
+}
+
+.ContactForm-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 900px) {
+  /* For mobile phones: */
+  .ContactForm {
+    width: 100%;
+  }
+  .ContactForm-input {
+    width: 250px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

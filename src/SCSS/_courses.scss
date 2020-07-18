@@ -36,11 +36,11 @@
 
 
 .CourseList ::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
 }
 
 .CourseList ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 2px #f5973e;
+    box-shadow: inset 0 0 2px grey;
     border-radius: 3px;
 }
 
