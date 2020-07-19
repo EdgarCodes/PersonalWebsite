@@ -8,6 +8,7 @@ import "./Components/css/styles.css";
 //Component Imports
 import Homepage from "./Components/Pages/Homepage";
 import Projects from "./Components/Pages/Projects";
+import Blogs from "./Components/Pages/Blogs";
 
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
@@ -18,6 +19,7 @@ function App() {
         <NavBar/>
         <Switch>
           <Route exact path="/" render={() => <Homepage/>}/>
+          <Route exact path="/blog" render={() => <Blogs/>}/>
           <Route exact path="/projects" render={() => <Projects/>}/>
         </Switch>
         <Footer/>

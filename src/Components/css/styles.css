@@ -1044,4 +1044,48 @@ a {
     width: 250px;
   }
 }
+
+.Blogs {
+  background-color: #eeeeee;
+}
+
+.Blogs-landing {
+  position: relative;
+  height: 35vh;
+  background-image: url(../../Images/blog-background.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Blogs-landing-overlay {
+  background-color: rgba(0, 0, 0, 0.541);
+  width: 100%;
+  height: 100%;
+}
+
+.Blogs-landing-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.Blogs-CardContainer {
+  padding: 2rem 0;
+}
+
+.BlogCard-img-container {
+  width: 900px;
+  height: 700px;
+}
+
+.BlogCard-img-container img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 /*# sourceMappingURL=styles.css.map */

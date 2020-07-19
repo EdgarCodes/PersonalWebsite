@@ -23,19 +23,19 @@ export default function Footer() {
             <div className = "Footer-bottom">
                 <div className = "Footer-icons-container">
 
-                    <a className = "Footer-icon" href= "https://twitter.com/"  target="_blank">
+                    <a className = "Footer-icon" href= "https://twitter.com/"  target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-twitter"></i>
                     </a>
 
-                    <a className = "Footer-icon" href= "https://facebook.com/"  target="_blank">
+                    <a className = "Footer-icon" href= "https://facebook.com/"  target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-facebook-f"></i>
                     </a>
 
-                    <a className = "Footer-icon" href= "https://github.com/"  target="_blank">
+                    <a className = "Footer-icon" href= "https://github.com/"  target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-github"></i>
                     </a>
 
-                    <a className = "Footer-icon" href= "https://www.linkedin.com/"  target="_blank">
+                    <a className = "Footer-icon" href= "https://www.linkedin.com/"  target="_blank" rel="noopener noreferrer">
                         <i className="fab fa-linkedin"></i>
                     </a>
                 </div>
