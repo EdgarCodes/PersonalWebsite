@@ -1,6 +1,7 @@
 import React from 'react';
 import UseFormState from "../Hooks/UseFormState";
 
+
 export default function ContactFom() {
     const [name, handleNameChange, resetName] = UseFormState("");
     const [email, handleEmailChange, resetEmail] = UseFormState("");
@@ -8,7 +9,8 @@ export default function ContactFom() {
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        console.log(name, email, message)
+        console.log(name, email, message);
+
         resetName();
         resetMessage();
         resetEmail();

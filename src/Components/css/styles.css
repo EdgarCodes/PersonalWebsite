@@ -631,6 +631,10 @@
   flex-direction: column;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .Footer-top-btn {
   margin: 2rem;
   display: inline-block;
