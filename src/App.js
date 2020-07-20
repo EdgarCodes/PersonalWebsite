@@ -10,6 +10,7 @@ import Homepage from "./Components/Pages/Homepage";
 import Projects from "./Components/Pages/Projects";
 import Blogs from "./Components/Pages/Blogs";
 import SearchBlog from "./Blogs/SearchBlog";
+import PageNotFound from "./Components/Pages/PageNotFound";
 
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/blog" render={() => <Blogs/>}/>
           <Route exact path="/projects" render={() => <Projects/>}/>
           <Route exact path = "/blog/:name" render={SearchBlog} />
+          <Route render = {() => <PageNotFound/>}/>
         </Switch>
         <Footer/>
     </div>

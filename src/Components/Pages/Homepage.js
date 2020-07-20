@@ -1,5 +1,5 @@
 import React, { useRef, useEffect} from 'react';
-import { Link as ScrollLink, animateScroll as scroll} from "react-scroll";
+import { Link as ScrollLink} from "react-scroll";
 
 //Components
 import TextTyping from "../TextTyping";
@@ -25,7 +25,7 @@ export default function Homepage() {
     document.title = "Edgar G. | Homepage";
 
     useEffect(() =>{
-        scroll.scrollTo(0)
+        window.scrollTo(0,0);
     }, [])
 
     return (

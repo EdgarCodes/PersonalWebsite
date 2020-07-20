@@ -1,4 +1,5 @@
 import BlogPage from "../Components/Pages/BlogPage";
+import PageNotFound from "../Components/Pages/PageNotFound";
 import React from 'react';
 
 //import blogs
@@ -17,8 +18,7 @@ export default function getBlog(props){
     let currentBlog = blogList.find(blog => blog.name.toLowerCase() === blogName.toLowerCase());
     if(currentBlog === undefined)
     {
-        console.log("Blog does not exist");
+        return <PageNotFound/>
     }
-    console.log(currentBlog);
     return <BlogPage blogData = {currentBlog} />
 }

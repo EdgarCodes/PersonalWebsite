@@ -1,8 +1,8 @@
 import React from 'react';
 
 //images
-import blog_image_1 from "../Images/Blog_1.jpg";
-import blog_image_2 from "../Images/Blog_2.jpg";
+import blog_image_1 from "./Blog_Images/Blog_1.jpg";
+import blog_image_2 from "./Blog_Images/Blog_2.jpg";
 
 const CurrentBlog = () =>{
     return(
@@ -17,11 +17,9 @@ const CurrentBlog = () =>{
             Purus sit amet luctus venenatis lectus magna fringilla. Lectus quam id leo in vitae turpis massa sed elementum.
         </p>
 
-        <img src = {blog_image_1} 
-        alt = "Me in japan" 
-        className = "Blogpage-single-image"
-        style = {{backgroundPositionY: "1000rem"}}
-        />
+        <div className = "Blogpage-image-container-content">
+            <img src = {blog_image_1} alt = "Me in japan"/>
+        </div>
         
         <h1 className = "Blogpage-subtitle">Arrival</h1>
         <p className = "Blogpage-Paragraph">
@@ -41,6 +39,5 @@ export const blog = {
     date: "July 28th, 2020",
     author: "Edgar Gonzalez",
     image: blog_image_2,
-    imageOffset: "-15",
     blogContent: <CurrentBlog/>
 }

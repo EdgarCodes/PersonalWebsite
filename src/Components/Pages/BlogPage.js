@@ -1,12 +1,12 @@
 import React, {useEffect} from 'react';
-import { animateScroll as scroll } from "react-scroll";
 
 export default function BlogPage(props) {
-    const {image,author, date, title, blogContent, imageOffset} = props.blogData;
+    const {image,author, date, title, blogContent} = props.blogData;
 
     useEffect(() =>{
-        scroll.scrollTo(0)
-    }, [])
+        window.scrollTo(0,0);
+        document.title = title;
+    }, [title])
 
     return (
         <div className = "BlogPage">
@@ -18,12 +18,10 @@ export default function BlogPage(props) {
                         <div className = "Blog-page-name">{`By ${author}`}</div>
                     </div>
                 </div>
-
-                <div className = "Blogpage-Intro-Image" style = 
-                {{
-                    backgroundImage: `url(${image})`,
-                    backgroundPositionY: `${imageOffset}rem`
-                }} />
+                
+                <div className = "Blogpage-image-container">
+                    <img src = {image} alt= {title} />
+                </div>
             </div>
 
             {blogContent}

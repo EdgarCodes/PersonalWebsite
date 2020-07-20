@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 * {
@@ -1166,10 +1167,10 @@ a {
 }
 
 .BlogPage-Intro {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 1rem;
 }
 
 .Blogpage-info {
@@ -1201,6 +1202,19 @@ a {
   padding: 0 1rem;
 }
 
+.Blogpage-image-container {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 800px;
+  height: 100%;
+}
+
+.Blogpage-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .Blogpage-Intro-Image {
   border-radius: 5px;
   width: 800px;
@@ -1210,7 +1224,7 @@ a {
 }
 
 .BlogPage-Content {
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 90%;
   max-width: 800px;
   display: flex;
@@ -1220,27 +1234,58 @@ a {
 }
 
 .Blogpage-subtitle {
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
   font-size: 35px;
-  letter-spacing: .5px;
   color: #303030;
-  padding: 1rem 0;
+  padding: 2rem .5rem 0 0;
   align-self: flex-start;
 }
 
 .Blogpage-Paragraph {
+  font-family: 'Noto Sans', sans-serif;
   font-size: 19px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 30px;
   letter-spacing: .5px;
-  color: #303030;
+  color: #535353;
+  padding: 1.5rem 0;
 }
 
-.Blogpage-single-image {
-  margin: 2rem 0;
+.Blogpage-image-container-content {
+  padding: 1.5rem 0;
   border-radius: 5px;
+  overflow: hidden;
   width: 800px;
-  height: 500px;
+  height: 100%;
+  width: 100%;
+}
+
+.Blogpage-image-container-content img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .Blogpage-image-container {
+    width: 90%;
+    height: 100%;
+  }
+  .Blogpage-subtitle {
+    font-size: 30px;
+  }
+  .Blogpage-Paragraph {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: .2px;
+  }
+  .Blogpage-info .Blogpage-Title {
+    font-size: 35px;
+  }
+  .Blogpage-info .Blog-page-dates {
+    font-size: 13px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import BlogCard from "../BlogCard";
-import { animateScroll as scroll } from "react-scroll";
 
 //Blog preview images
-import blog_image_1 from "../../Images/Blog_1.jpg";
-import blog_image_2 from "../../Images/Blog_2.jpg";
-import blog_image_3 from "../../Images/blog_3.jpg";
+import blog_image_1 from "../../Images/Blog_1_preview.jpg";
+import blog_image_2 from "../../Images/Blog_2_preview.jpg";
+import blog_image_3 from "../../Images/blog_3_preview.jpg";
 
 export default function Blogs() {
     useEffect(() =>{
-        scroll.scrollTo(0);
+        window.scrollTo(0,0);
+        document.title = "Edgar G. | Blogs";
     }, [])
 
     return (
