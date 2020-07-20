@@ -1,5 +1,4 @@
 import React from 'react';
-import project_image from "../Images/project-preview-image.png";
 
 export default function ProjectCard(props) {
     return (
@@ -11,7 +10,7 @@ export default function ProjectCard(props) {
             <div className = "ProjectCard-info">
                 <h1 className = "ProjectCard-Title">{props.title}</h1>
                 <p className = "ProjectCard-desc">{props.children}</p>
-                <a href= "#" className = "ProjectCard-btn">View on Github</a>
+                <a href= {props.link} className = "ProjectCard-btn" target ="_blank">View on Github</a>
             </div>
         </div>
     )

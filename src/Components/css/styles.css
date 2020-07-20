@@ -1325,8 +1325,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  max-width: 900px;
   height: 250px;
   border-radius: 20px;
   overflow: hidden;
@@ -1335,7 +1333,7 @@ a {
 }
 
 .ProjectCard-ImageContainer {
-  width: 400px;
+  width: 300px;
   height: 100%;
 }
 
@@ -1348,10 +1346,9 @@ a {
 .ProjectCard-info {
   display: flex;
   align-items: center;
-  justify-content: space-around;
   flex-direction: column;
   height: 100%;
-  width: 100%;
+  width: 600px;
   padding: 1rem 0;
 }
 
@@ -1359,6 +1356,7 @@ a {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 300;
   color: #4d4d4d;
+  text-align: center;
 }
 
 .ProjectCard-desc {
@@ -1366,6 +1364,7 @@ a {
   color: #4d4d4d;
   font-weight: 300;
   line-height: 20px;
+  margin: 1rem 0;
 }
 
 .ProjectCard-btn {
@@ -1377,10 +1376,36 @@ a {
   padding: .5rem 2rem;
   outline: none;
   background-color: #f5973e;
+  margin: 1rem 0;
 }
 
 .ProjectCard-btn:hover {
   background-color: #fdad62;
   transform: scale(0.98);
+}
+
+@media (max-width: 1000px) {
+  .ProjectCard {
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    max-width: 600px;
+  }
+  .ProjectCard-info {
+    width: 100%;
+  }
+  .ProjectCard-ImageContainer {
+    width: 100%;
+  }
+  .ProjectCard-Title {
+    font-size: 25px;
+  }
+  .ProjectCard-desc {
+    margin: 1rem 0;
+    font-size: 15px;
+  }
+  .ProjectCard-btn {
+    margin: 1rem 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
