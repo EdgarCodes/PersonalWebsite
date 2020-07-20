@@ -9,11 +9,13 @@ import "./Components/css/styles.css";
 import Homepage from "./Components/Pages/Homepage";
 import Projects from "./Components/Pages/Projects";
 import Blogs from "./Components/Pages/Blogs";
+import SearchBlog from "./Blogs/SearchBlog";
 
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 
 function App() {
+
   return (
     <div className="App">
         <NavBar/>
@@ -21,6 +23,7 @@ function App() {
           <Route exact path="/" render={() => <Homepage/>}/>
           <Route exact path="/blog" render={() => <Blogs/>}/>
           <Route exact path="/projects" render={() => <Projects/>}/>
+          <Route exact path = "/blog/:name" render={SearchBlog} />
         </Switch>
         <Footer/>
     </div>

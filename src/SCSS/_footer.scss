@@ -28,6 +28,8 @@ a
 
 .Footer-top-btn
 {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
     margin: 2rem;
     display: inline-block;
     cursor: pointer;
@@ -39,7 +41,8 @@ a
 
     i
     {
-        padding-top: .45rem;
+        font-size: 18px;
+        padding-left: .07rem;
         color: white;
     }
 }
