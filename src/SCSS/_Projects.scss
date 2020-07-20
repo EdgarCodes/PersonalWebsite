@@ -1,0 +1,27 @@
+.Projects
+{
+    background-color: rgb(238, 238, 238);
+}
+
+.Projects-landing
+{
+    position: relative;
+    height: 30vh;
+
+    background-image: url(../../Images/projects-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.Projects-landing-title
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}

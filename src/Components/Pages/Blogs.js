@@ -15,7 +15,7 @@ export default function Blogs() {
     return (
         <div className = "Blogs">
             <div className = "Blogs-landing">
-                <div className = "Blogs-landing-overlay"/>
+                <div className = "landing-overlay"/>
                 <h1 className = "Blogs-landing-title">Blogs</h1>
             </div>
 
