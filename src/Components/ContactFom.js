@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import UseFormState from "../Hooks/UseFormState";
 
 //If form doesnt work then remove the html in index and delete encode and fetch
@@ -15,18 +15,22 @@ export default function ContactFom() {
     const [message, handleMessageChange, resetMessage] = UseFormState("");
     const [warning, setWarning] = useState("");
 
+    const warningText = useRef(null);
+
     const handleSubmit = (e) =>{
         e.preventDefault();
         console.log(name, email, message);
 
         if(name === "" || email === "" || message === "")
         {
+            warningText.current.style.color = "red";
             setWarning("Please Enter All Fields")
             return;
         }
 
         if(!isNaN(name))
         {
+            warningText.current.style.color = "red";
             setWarning("Please enter a valid name");
             return;
         }
@@ -36,7 +40,10 @@ export default function ContactFom() {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message })
           })
-        .then(() => alert("Success!"))
+        .then(() => {
+            setWarning("Thank you for your submission!");
+            warningText.current.style.color = "white";
+        })
         .catch(error => alert(error));
 
         resetName();
@@ -56,7 +63,8 @@ export default function ContactFom() {
             className = "ContactForm"
             method ="POST" 
             data-netlify="true"
-            name="contact">
+            name="contact"
+            data-netlify-recaptcha="true">
                 <input
                 type="text"
                 value={name}
@@ -89,9 +97,9 @@ export default function ContactFom() {
 
 
                 <button className = "ContactForm-btn">Submit</button>    
+                <div data-netlify-recaptcha="true"></div>
             </form>
-
-            <div style = {{paddingBottom: "1rem", color: "red"}}>{warning}</div>
+            <div style = {{paddingBottom: "1rem"}} ref = {warningText}>{warning}</div>
         </div>
     )
 }
