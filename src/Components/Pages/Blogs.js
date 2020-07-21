@@ -21,27 +21,30 @@ export default function Blogs() {
 
             <div className="Blogs-CardContainer">
                 <BlogCard image =  {blog_image_1} 
-                date = "July 19th, 2020"
+                date = "July 22th, 2020"
                 title = "South Korea | Arrival"
                 offset = "-1"
                 link = "South-Korea-Arrival">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tortor condimentum lacinia quis vel eros donec ac.
+                The beginning of my study abroad adventure in South Korea beginning at Yonsei University.
+                I share my most memorable parts of moving to a completely new country in Asia and the process I went through to be able to study abroad for free.
                 </BlogCard>
 
                 <BlogCard image =  {blog_image_2} 
-                date = "July 23th, 2020"
-                title = "Study Abroad | Japan"
+                date = "July 26th, 2020"
+                title = "Japan | The Great Detour"
                 offset = "-4"
                 link = "Study-Abroad-Japan">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tortor condimentum lacinia quis vel eros donec ac.
+                A detour from my South Korean adventure to dive into Japan for the first time. A long dream of mine to visit the rise of the rising sun
+                has finally begun and I will share my experiences and recommendations for Japan!
                 </BlogCard>
 
                 <BlogCard image =  {blog_image_3} 
-                date = "July 26th, 2020"
+                date = "July 30th, 2020"
                 title = "South Korea | Final Days"
                 offset = "0"
                 link = "South-Korea-Final-Days">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tortor condimentum lacinia quis vel eros donec ac.
+                The unfortunate ending to my journey, finally putting my thoughts together and sharing what I have learned through the past unforgettable months.
+                The end of one story, the start of another!
                 </BlogCard>
             </div>
         </div>

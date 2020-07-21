@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const courses = [
     "Computer Science I: Intro to Object Oriented Programming",
     "Computer Science II: Intro to Data Structures and Algorithms",
@@ -25,3 +27,13 @@ export const skills =
     {name: "Python", score: 5},
     {name: "C++", score: 4}
 ]
+
+export const about = <div>
+        My name is Edgar Gonzalez, I am 3rd-year Computer Science Major and Mathematics minor at Western Kentucky University. My focus in college is algorithms and theory, 
+        but recently I have been studying full-stack web development on the side! I am of Hispanic background and was raised in the USA as well as having studied in Asia,
+        this has helped me understand and connect with people from all over the world.
+        <br/><br/>
+        I enjoy solving difficult problems because of the satisfaction of being able to overcome my old self. 
+        I also enjoy constantly learning new things which makes programming a great hobby since seemingly every day a new technology is released. 
+        Aside from programming, I enjoy playing the piano and studying entrepreneurship.
+</div>

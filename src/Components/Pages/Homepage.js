@@ -11,7 +11,7 @@ import CourseList from "../CourseList";
 import SkillGraph from "../SkillGraph";
 
 //Helpers
-import {courses, skills} from "../../Helpers/LongText";
+import {courses, skills, about} from "../../Helpers/LongText";
 
 //import photos
 import graduation_photo from "../../Images/Graduation_Picture.jpg";
@@ -33,7 +33,7 @@ export default function Homepage() {
         <div className = "Homepage-landing">
             <div className = "Homepage-landing-text">
                 <div className = "Homepage-landing-intro">{`//Hello, I am...`}</div>
-                <TextTyping strings= {["Edgar The Coder", "Edgar Gonzalez."]}/>
+                <TextTyping strings= {["Edgar, A Developer", "Edgar Gonzalez."]}/>
                 <div className = "Homepage-landing-subtext"> A 3rd Year Computer Science Major at WKU</div>
             </div>
             <ScrollLink className = "Homepage-landing-btn"
@@ -54,13 +54,7 @@ export default function Homepage() {
                             <div className = "divider"/>
                         </div>
                         <ParagraphContainer>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <br/><br/>
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            {about}
                         </ParagraphContainer> 
                     </div>                   
 
