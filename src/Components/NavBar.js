@@ -4,6 +4,8 @@ import {NavLink} from "react-router-dom";
 //Import logo
 import Logo from "../Images/Basic_Logo.png";
 
+import resume from "../Resume/Resume.pdf";
+
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(null);
     const sideBar = useRef(null);
@@ -44,8 +46,8 @@ export default function NavBar() {
                 <NavLink to= "/projects" className= "Navbar-item"
                 activeClassName = "active-navLink">Projects</NavLink>
 
-                <NavLink to= "/resume" className= "Navbar-item"
-                activeClassName = "active-navLink">Resume</NavLink>
+                <a href= {resume} className= "Navbar-item"
+                >Resume</a>
             </nav>
 
             <div className = "Navbar-side" ref={sideBar}>
@@ -68,11 +70,8 @@ export default function NavBar() {
                     activeClassName = "active-navLink">
                     Projects</NavLink>
 
-                    <NavLink to= "/resume" 
-                    className= "Navbar-item" 
-                    activeClassName = "active-navLink"
-                    onClick = {toggleIsOpen}>
-                    Resume</NavLink>
+                    <a href= {resume} className= "Navbar-item"
+                    >Resume</a>
                 </nav>
             </div>
         </div>

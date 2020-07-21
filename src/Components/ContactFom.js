@@ -23,12 +23,13 @@ export default function ContactFom() {
                 <h1 style = {{color:"white"}}>Contact Me!</h1>
                 <div className = "divider" style = {{backgroundColor: "White", width: "100px", margin: "auto"}}/>
             </div>
-            <form onSubmit = {handleSubmit} className = "ContactForm">
+            <form onSubmit = {handleSubmit} className = "ContactForm" method ="POST" netlify>
                 <input
                 type="text"
                 value={name}
                 placeholder="Name"
                 className = "ContactForm-input"
+                aria-label = "Name"
                 onChange={handleNameChange}
                 ></input>
 
@@ -37,6 +38,7 @@ export default function ContactFom() {
                 value={email}
                 placeholder="Email"
                 className = "ContactForm-input"
+                aria-label = "Email"
                 onChange={handleEmailChange}
                 ></input>
 
@@ -45,6 +47,7 @@ export default function ContactFom() {
                 value={message}
                 placeholder="Message"
                 className = "ContactForm-input large"
+                aria-label = "Message"
                 onChange={handleMessageChange}
                 ></textarea>
 

@@ -16,6 +16,7 @@ export default function Footer() {
             <div className= "Footer-top">
                 <button className = "Footer-top-btn"
                 onClick = {goToTop}
+                aria-label = "Scroll To Top"
                 ><i className="fas fa-arrow-up"></i>
                 </button>
 
@@ -24,19 +25,38 @@ export default function Footer() {
             <div className = "Footer-bottom">
                 <div className = "Footer-icons-container">
 
-                    <a className = "Footer-icon" href= "https://twitter.com/"  target="_blank" rel="noopener noreferrer">
+                    <a className = "Footer-icon"
+                    href= "https://twitter.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label= "Twitter">
                         <i className="fab fa-twitter"></i>
                     </a>
 
-                    <a className = "Footer-icon" href= "https://facebook.com/"  target="_blank" rel="noopener noreferrer">
+                    <a 
+                    className = "Footer-icon" 
+                    href= "https://facebook.com/"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label = "Facebook">
                         <i className="fab fa-facebook-f"></i>
                     </a>
 
-                    <a className = "Footer-icon" href= "https://github.com/"  target="_blank" rel="noopener noreferrer">
+                    <a 
+                    className = "Footer-icon" 
+                    href= "https://github.com/MidnightMinty"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label = "Github">
                         <i className="fab fa-github"></i>
                     </a>
 
-                    <a className = "Footer-icon" href= "https://www.linkedin.com/"  target="_blank" rel="noopener noreferrer">
+                    <a 
+                    className = "Footer-icon" 
+                    href= "https://www.linkedin.com/"  
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    aria-label = "Linkedin">
                         <i className="fab fa-linkedin"></i>
                     </a>
                 </div>

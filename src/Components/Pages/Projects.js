@@ -3,9 +3,9 @@ import React, {useEffect} from 'react';
 import ProjectCard from "../ProjectCard";
 
 //images
-import preview_1 from "../../Images/project-preview-image.png";
-import preview_2 from "../../Images/project-pokedex-preview.JPG";
-import preview_3 from "../../Images/project-schedule-preview.JPG";
+import preview_1 from "../../Images/project-preview-image.jpg";
+import preview_2 from "../../Images/project-pokedex-preview.jpg";
+import preview_3 from "../../Images/project-schedule-preview.jpg";
 
 export default function Projects() {
     useEffect(() =>{
