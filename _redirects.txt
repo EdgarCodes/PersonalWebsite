@@ -1,1 +1,6 @@
+/       /
+/home   /
+/blog   /blog
+/projects   /projects
+/resume     /static/media/Resume.1121e5ed.pdf
 /*    /index.html   200
