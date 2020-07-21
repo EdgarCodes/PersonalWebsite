@@ -63,8 +63,7 @@ export default function ContactFom() {
             className = "ContactForm"
             method ="POST" 
             data-netlify="true"
-            name="contact"
-            data-netlify-recaptcha="true">
+            name="contact">
                 <input
                 type="text"
                 value={name}
@@ -97,7 +96,6 @@ export default function ContactFom() {
 
 
                 <button className = "ContactForm-btn">Submit</button>    
-                <div data-netlify-recaptcha="true"></div>
             </form>
             <div style = {{paddingBottom: "1rem"}} ref = {warningText}>{warning}</div>
         </div>
