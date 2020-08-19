@@ -1,4 +1,4 @@
 ## Edgar's Personal Website
-TODO, Add footer icon links
 TODO, Start Blog
-TODO, fix redirects in netlify
+TODO, Add more projects
+Website is basically finished, so go do some other projects unless you are doing the blogs
