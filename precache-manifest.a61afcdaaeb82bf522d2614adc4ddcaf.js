@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6ee230ed020350f72f995d5d86a10bb7",
+    "revision": "67e897f5ce1e45cb4710b2d257a9700f",
     "url": "/index.html"
   },
   {
-    "revision": "74d2d67cd8f5e68f1190",
-    "url": "/static/css/main.31f73ed2.chunk.css"
+    "revision": "45f7a5124935ee8113c9",
+    "url": "/static/css/main.9a8b7313.chunk.css"
   },
   {
-    "revision": "0869976398371efd0263",
-    "url": "/static/js/2.e006d6e3.chunk.js"
+    "revision": "07a08e3db2a764fe1d1a",
+    "url": "/static/js/2.0ad9a6aa.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.e006d6e3.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.0ad9a6aa.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "74d2d67cd8f5e68f1190",
-    "url": "/static/js/main.5b443837.chunk.js"
+    "revision": "45f7a5124935ee8113c9",
+    "url": "/static/js/main.acb78da6.chunk.js"
   },
   {
     "revision": "9734eb3cba0fa9d5ef84",
@@ -48,16 +48,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Blog_2_preview.15cf4d6b.jpg"
   },
   {
+    "revision": "9937f7de7216e2e1f6f51a685e47a8c4",
+    "url": "/static/media/EdgarResumeWeb .9937f7de.pdf"
+  },
+  {
     "revision": "82275cebf477dea2cdbf0b869c7e25e5",
     "url": "/static/media/Graduation_Picture.82275ceb.jpg"
   },
   {
     "revision": "3c4b700087aa4a05f89caadb11abe82c",
     "url": "/static/media/NHS_Member_Badge-300x300.3c4b7000.png"
-  },
-  {
-    "revision": "1121e5eda3c8f21a01b75a065655814e",
-    "url": "/static/media/Resume.1121e5ed.pdf"
   },
   {
     "revision": "ace78f5d21a71139925bc1c225e176d6",
@@ -72,6 +72,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/homepage-background-2.47a32abb.jpg"
   },
   {
+    "revision": "9d0672a5a142aa40263a8f29e09d0a1a",
+    "url": "/static/media/project-cabreras.9d0672a5.jpg"
+  },
+  {
     "revision": "06dd35a4b860fcacd9a69f21694b3945",
     "url": "/static/media/project-pokedex-preview.06dd35a4.jpg"
   },
@@ -82,6 +86,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4dc8d134e57ec4e8698ed44d772332a8",
     "url": "/static/media/project-schedule-preview.4dc8d134.jpg"
+  },
+  {
+    "revision": "8b960721895ff66ff716875a22ddf722",
+    "url": "/static/media/project-social-media.8b960721.jpg"
   },
   {
     "revision": "9ce4f8cb5047d34f960e0c140593c654",

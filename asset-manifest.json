@@ -1,36 +1,38 @@
 {
   "files": {
-    "main.css": "/static/css/main.31f73ed2.chunk.css",
-    "main.js": "/static/js/main.5b443837.chunk.js",
-    "main.js.map": "/static/js/main.5b443837.chunk.js.map",
+    "main.css": "/static/css/main.9a8b7313.chunk.css",
+    "main.js": "/static/js/main.acb78da6.chunk.js",
+    "main.js.map": "/static/js/main.acb78da6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.64fa3b4a.js",
     "runtime-main.js.map": "/static/js/runtime-main.64fa3b4a.js.map",
-    "static/js/2.e006d6e3.chunk.js": "/static/js/2.e006d6e3.chunk.js",
-    "static/js/2.e006d6e3.chunk.js.map": "/static/js/2.e006d6e3.chunk.js.map",
+    "static/js/2.0ad9a6aa.chunk.js": "/static/js/2.0ad9a6aa.chunk.js",
+    "static/js/2.0ad9a6aa.chunk.js.map": "/static/js/2.0ad9a6aa.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b16713eb12f920a08a541b89844a4cb7.js": "/precache-manifest.b16713eb12f920a08a541b89844a4cb7.js",
+    "precache-manifest.a61afcdaaeb82bf522d2614adc4ddcaf.js": "/precache-manifest.a61afcdaaeb82bf522d2614adc4ddcaf.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.31f73ed2.chunk.css.map": "/static/css/main.31f73ed2.chunk.css.map",
-    "static/js/2.e006d6e3.chunk.js.LICENSE.txt": "/static/js/2.e006d6e3.chunk.js.LICENSE.txt",
+    "static/css/main.9a8b7313.chunk.css.map": "/static/css/main.9a8b7313.chunk.css.map",
+    "static/js/2.0ad9a6aa.chunk.js.LICENSE.txt": "/static/js/2.0ad9a6aa.chunk.js.LICENSE.txt",
     "static/media/159503493365.png": "/static/media/159503493365.87014735.png",
     "static/media/Basic_Logo.png": "/static/media/Basic_Logo.e1e73f65.png",
     "static/media/Blog_1.jpg": "/static/media/Blog_1.331dbd04.jpg",
     "static/media/Blog_1_preview.jpg": "/static/media/Blog_1_preview.07ea9cb9.jpg",
     "static/media/Blog_2.jpg": "/static/media/Blog_2.f8cc317d.jpg",
     "static/media/Blog_2_preview.jpg": "/static/media/Blog_2_preview.15cf4d6b.jpg",
+    "static/media/EdgarResumeWeb .pdf": "/static/media/EdgarResumeWeb .9937f7de.pdf",
     "static/media/Graduation_Picture.jpg": "/static/media/Graduation_Picture.82275ceb.jpg",
     "static/media/NHS_Member_Badge-300x300.png": "/static/media/NHS_Member_Badge-300x300.3c4b7000.png",
-    "static/media/Resume.pdf": "/static/media/Resume.1121e5ed.pdf",
     "static/media/styles.css": "/static/media/projects-background.9ce4f8cb.jpg",
     "static/media/blog_3_preview.jpg": "/static/media/blog_3_preview.6cce95e7.jpg",
+    "static/media/project-cabreras.jpg": "/static/media/project-cabreras.9d0672a5.jpg",
     "static/media/project-pokedex-preview.jpg": "/static/media/project-pokedex-preview.06dd35a4.jpg",
     "static/media/project-preview-image.jpg": "/static/media/project-preview-image.854ccf17.jpg",
-    "static/media/project-schedule-preview.jpg": "/static/media/project-schedule-preview.4dc8d134.jpg"
+    "static/media/project-schedule-preview.jpg": "/static/media/project-schedule-preview.4dc8d134.jpg",
+    "static/media/project-social-media.jpg": "/static/media/project-social-media.8b960721.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.64fa3b4a.js",
-    "static/js/2.e006d6e3.chunk.js",
-    "static/css/main.31f73ed2.chunk.css",
-    "static/js/main.5b443837.chunk.js"
+    "static/js/2.0ad9a6aa.chunk.js",
+    "static/css/main.9a8b7313.chunk.css",
+    "static/js/main.acb78da6.chunk.js"
   ]
 }
